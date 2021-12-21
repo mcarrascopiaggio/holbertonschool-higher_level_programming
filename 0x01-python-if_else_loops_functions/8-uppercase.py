@@ -6,7 +6,3 @@ def uppercase(str):
             i = i - 32
         print("{:c}".format(i), end='')
     print(" ")
-
-
-uppercase("best")
-uppercase("Best School 98 Battery street")
