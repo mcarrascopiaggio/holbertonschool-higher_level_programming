@@ -9,38 +9,54 @@ Import my function
 ==================
 
 	>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
-=============================================================================
-Test: matrix with list of list of integers or floats by a int
-=============================================================================
-	>>>matrix = [
-    [3, 6, 3],
-    [9, 9, 9]
-]
-	>>>print(matrix_divided(matrix, 3))
-	[[1, 2, 1], [3, 3, 3]]
+
+====================
+Def different matrix
+====================
+
+>>> matrix_all_int = [[1, 2, 3], [4, 5, 6]]
+>>> matrix_one_int = [1, 2, 3]
+>>> matrix_mix_int_float = [[1, 2.6, 3], [4.9, 5, 6]]
+>>> matrix_all_float = [[1.0, 2.00, 3.0],[4.0, 5.0, 6.0]]
+>>> matrix_empy = []
+>>> matrix_dif_size= [[1, 2, 3], [4, 5]]
+>>> matrix_bool= [[1, False, 3], [4, 5, 6]]
+>>> matrix_string= [[1, 'a', 3], [4, 5, 8]]
+>>> matrix_tup= [(1, 2, 3), [4, 5, 6]]
+>>> matrix_neg = [[1, 2, -3], [4, 5, 6]]
+>>> matrix_one_num = [2, 3]
+>>> matrix_no_list = 2
+>>> matrix_no_list_tup = ([1, 2, 3])
+>>> div_0 = 0
+>>> div_f = 3.0
+>>> div_s = 'string'
+
 
 =============================================================================
-Test: matrix with list of list of integers or floats by a float
-=============================================================================
+Test 0: matrix with list of list of integers by a int
+============================================================================
+
+	>>> print(matrix_divided(matrix_all_int, 3))
+	[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
 
 =============================================================================
-Test: matrix with list of list of integers or floats by a 0
+Test 1: matrix with list of only one list of integers by a int
+============================================================================
+
+	>>> print(matrix_divided(matrix_one_int, 3))
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
 =============================================================================
+Test 2: matrix with list of list of integers or floats by a int
+============================================================================
+
+	>>> print(matrix_divided(matrix_mix_int_float, 1))
+	[[1.0, 2.6, 3.0], [4.9, 5.0, 6.0]]
+
 =============================================================================
-Test: matrix with list of list of integers or floats by a string
-=============================================================================
-=============================================================================
-Test: matrix with list of list of integers or floats by no parameter
-=============================================================================
-=============================================================================
-Test: matrix with list of list of integers or floats by a int
-=============================================================================
-=============================================================================
-Test: matrix with list of list of integers or floats by a int
-=============================================================================
-=============================================================================
-Test: matrix with list of list of integers or floats by a int
-=============================================================================
-=============================================================================
-Test: matrix with list of list of integers or floats by a int
-=============================================================================
+Test 3: matrix with list of list of integers or floats by a int
+============================================================================
+
+	>>> print(matrix_divided(matrix_all_float, 1))
+	[[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]]
