@@ -24,9 +24,10 @@ Def different matrix
 >>> matrix_string= [[1, 'a', 3], [4, 5, 8]]
 >>> matrix_tup= [(1, 2, 3), [4, 5, 6]]
 >>> matrix_neg = [[1, 2, -3], [4, 5, 6]]
->>> matrix_one_num = [2, 3]
+>>> matrix_one_num = [[2], [3]]
 >>> matrix_no_list = 2
 >>> matrix_no_list_tup = ([1, 2, 3])
+>>> matrix_more = [[1.0],[2.0], [3.0],[4.0], [5.0],[6.0]]
 >>> div_0 = 0
 >>> div_f = 3.0
 >>> div_s = 'string'
@@ -62,10 +63,95 @@ Test 3: matrix with list of list of integers or floats by a int
 	[[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]]
 
 =============================================================================
-Test : matrix with list of list of integers div 0
+Test 14: matrix with list of list of integers div 0
 ============================================================================
 
 	>>> print(matrix_divided(matrix_all_float, 0))
 	Traceback (most recent call last):
 	ZeroDivisionError: division by zero
 
+=============================================================================
+Test 4: empty matrix
+============================================================================
+
+	>>> print(matrix_divided(matrix_empty, 1))
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+=============================================================================
+Test 5: matrix with dif size
+============================================================================
+
+	>>> print(matrix_divided(matrix_dif_size, 1))
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+=============================================================================
+Test 6: matrix with boolean argument
+============================================================================
+
+	>>> print(matrix_divided(matrix_bool, 1))
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+=============================================================================
+Test 7: matrix with a string
+============================================================================
+
+	>>> print(matrix_divided(matrix_string, 1))
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+=============================================================================
+Test 8: matrix with a tup
+============================================================================
+
+	>>> print(matrix_divided(matrix_tup, 1))
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+=============================================================================
+Test 9: matrix with a neg
+============================================================================
+
+	>>> print(matrix_divided(matrix_neg, 1))
+	[[1.0, 2.0, -3.0], [4.0, 5.0, 6.0]]
+
+=============================================================================
+Test 10: matrix with a two list with 1
+============================================================================
+
+	>>> print(matrix_divided(matrix_one_num, 1))
+	[[2.0], [3.0]]
+>>> matrix_no_list = 2
+
+=============================================================================
+Test 11: matrix with no list
+============================================================================
+
+	>>> print(matrix_divided(matrix_no_list_tup, 1))
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+=============================================================================
+Test 12: matrix with three list
+============================================================================
+
+	>>> print(matrix_divided(matrix_more, 1))
+	[[1.0],[2.0], [3.0],[4.0], [5.0],[6.0]]
+>>> div_f = 3.0
+
+=============================================================================
+Test 13: matrix with float div
+============================================================================
+
+	>>> print(matrix_divided(matrix_all_int, div_f))
+	[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+=============================================================================
+Test 15: matrix with string div
+============================================================================
+
+	>>> print(matrix_divided(matrix_all_int, div_s))
+	Traceback (most recent call last):
+	TypeError: div must be a number

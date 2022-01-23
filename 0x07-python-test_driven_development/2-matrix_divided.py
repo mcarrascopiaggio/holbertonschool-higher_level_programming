@@ -28,14 +28,14 @@ def matrix_divided(matrix, div):
     if div == 0:
         raise ZeroDivisionError("division by zero")
     if type(div) is not int and type(div) is not float:
-        raise(" div must be a number")
+        raise TypeError(" div must be a number")
     for i in matrix:
         if len(i) != len_matrix:
-            raise("Each row of the matrix must have the same size")
+            raise TypeError("Each row of the matrix must have the same size")
     for i in range(len(matrix)):
         for j in range(len(matrix[i])):
             if type(matrix[i][j]) != int and type(matrix[i][j]) != float:
-                raise(long_e)
+                raise TypeError(long_e)
     for i in matrix:
         new_matrix.append(list(map(lambda x: round(x/div, 2), i)))
     return new_matrix
