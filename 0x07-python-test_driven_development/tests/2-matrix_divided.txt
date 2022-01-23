@@ -15,7 +15,7 @@ Def different matrix
 ====================
 
 >>> matrix_all_int = [[1, 2, 3], [4, 5, 6]]
->>> matrix_one_int = [1, 2, 3]
+>>> matrix_one_int = [[1, 2, 3]]
 >>> matrix_mix_int_float = [[1, 2.6, 3], [4.9, 5, 6]]
 >>> matrix_all_float = [[1.0, 2.00, 3.0],[4.0, 5.0, 6.0]]
 >>> matrix_empy = []
@@ -60,3 +60,12 @@ Test 3: matrix with list of list of integers or floats by a int
 
 	>>> print(matrix_divided(matrix_all_float, 1))
 	[[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]]
+
+=============================================================================
+Test : matrix with list of list of integers div 0
+============================================================================
+
+	>>> print(matrix_divided(matrix_all_float, 0))
+	Traceback (most recent call last):
+	ZeroDivisionError: division by zero
+
