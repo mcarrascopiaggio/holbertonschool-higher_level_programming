@@ -1,0 +1,130 @@
+===================================
+TEXT INDENTATION
+===================================
+
+``text_indentation()`` is a function that prints My name is <first name> <last name>
+
+==================
+Import my function
+==================
+
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+	>>> text_main = "Lorem ipsum dolor sit amet, consectetur ? adipiscing : elit."
+	>>> text_space_init = " example with space al first: next"
+	>>> text_mult_space_init = "     example .multiple space"
+	>>> text_mul_space_end = "space with multiple? spaces    "
+	>>> text_space_finish = "example with space at: the end "
+	>>> text_space_infi = " ecample with space at beggining and at: the end "
+	>>> text_del_One = "This example show that . works right"
+	>>> text_del_Sec = "This example show that ? works right"
+	>>> test_del_Thi = "This example show tha : works right"
+	>>> test_no_str = [2, 3]
+	>>> test_empty = ""
+	>>> test_mul_space_inside = "This ?   is a problem"
+
+================================================================================
+Test 0: main case
+================================================================================
+
+	>>> text_indentation(text_main)
+	Lorem ipsum dolor sit amet, consectetur ?
+	<BLANKLINE>	
+	adipiscing :
+	<BLANKLINE>
+	elit.
+	<BLANKLINE>
+
+================================================================================
+Test 1: text_space_init = " example with space al first: next" 
+================================================================================
+
+	>>> text_indentation(text_space_init)
+	example with space al first:
+	<BLANKLINE>
+	next
+
+================================================================================
+Test 2: text_mult_space_init = "     example .multiple space"
+================================================================================
+
+	>>> text_indentation(text_mult_space_init)
+	example .
+	<BLANKLINE>
+	multiple space
+
+================================================================================
+Test 3: text_mul_space_end = "space with multiple? spaces    " 
+================================================================================
+
+	>>> text_indentation(text_mul_space_end)
+	space with multiple?
+	<BLANKLINE>
+	spaces
+
+================================================================================
+Test 4: text_space_finish = "example with space at: the end "
+================================================================================
+
+	>>> text_indentation(text_space_finish)
+	example with space at:
+	<BLANKLINE>
+	the end
+
+================================================================================
+Test 5: text_space_infi = " ecample with space at beggining and at: the end "
+================================================================================
+
+	>>> text_indentation(text_space_infi)
+	ecample with space at beggining and at:
+	<BLANKLINE>
+	the end
+
+================================================================================
+Test 6: text_del_One = "This example show that . works right" 
+================================================================================
+
+	>>> text_indentation(text_del_One)
+	This example show that .
+	<BLANKLINE>
+	works right
+
+================================================================================
+Test 7: text_del_Sec = "This example show that ? works right" 
+================================================================================
+
+	>>> text_indentation(text_del_Sec)
+	This example show that ?
+	<BLANKLINE>
+	works right
+
+================================================================================
+Test 8: test_del_Thi = "This example show tha : works right"
+================================================================================
+
+	>>> text_indentation(test_del_Thi)
+	This example show tha :
+	<BLANKLINE>
+	works right
+
+================================================================================
+Test 10: test_no_str = [2, 3] 
+================================================================================
+
+	>>> text_indentation(test_no_str)
+	Traceback (most recent call last):
+	TypeError: text must be a string
+
+================================================================================
+Test 11: test_empty = ""
+================================================================================
+
+	>>> text_indentation(test_empty)
+
+================================================================================
+Test 12: test_mul_space_inside = "This ?   is a problem"
+================================================================================
+	
+	>>> text_indentation(test_mul_space_inside)
+	This ?
+	<BLANKLINE>
+	is a problem
