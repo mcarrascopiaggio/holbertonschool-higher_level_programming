@@ -18,7 +18,7 @@ Def different matrix
 >>> matrix_one_int = [[1, 2, 3]]
 >>> matrix_mix_int_float = [[1, 2.6, 3], [4.9, 5, 6]]
 >>> matrix_all_float = [[1.0, 2.00, 3.0],[4.0, 5.0, 6.0]]
->>> matrix_empy = []
+>>> matrix_empty = []
 >>> matrix_dif_size= [[1, 2, 3], [4, 5]]
 >>> matrix_bool= [[1, False, 3], [4, 5, 6]]
 >>> matrix_string= [[1, 'a', 3], [4, 5, 8]]
@@ -27,7 +27,7 @@ Def different matrix
 >>> matrix_one_num = [[2], [3]]
 >>> matrix_no_list = 2
 >>> matrix_no_list_tup = ([1, 2, 3])
->>> matrix_more = [[1.0],[2.0], [3.0],[4.0], [5.0],[6.0]]
+>>> matrix_more = [[1.0, 2.0], [3.0, 4.0], [5.0, 6.0]]
 >>> div_0 = 0
 >>> div_f = 3.0
 >>> div_s = 'string'
@@ -84,7 +84,7 @@ Test 5: matrix with dif size
 
 	>>> print(matrix_divided(matrix_dif_size, 1))
 	Traceback (most recent call last):
-	TypeError: matrix must be a matrix (list of lists) of integers/floats
+	TypeError: Each row of the matrix must have the same size
 
 =============================================================================
 Test 6: matrix with boolean argument
@@ -123,7 +123,6 @@ Test 10: matrix with a two list with 1
 
 	>>> print(matrix_divided(matrix_one_num, 1))
 	[[2.0], [3.0]]
->>> matrix_no_list = 2
 
 =============================================================================
 Test 11: matrix with no list
@@ -138,8 +137,7 @@ Test 12: matrix with three list
 ============================================================================
 
 	>>> print(matrix_divided(matrix_more, 1))
-	[[1.0],[2.0], [3.0],[4.0], [5.0],[6.0]]
->>> div_f = 3.0
+	[[1.0, 2.0], [3.0, 4.0], [5.0, 6.0]]
 
 =============================================================================
 Test 13: matrix with float div

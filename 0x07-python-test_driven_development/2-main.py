@@ -2,8 +2,9 @@
 matrix_divided = __import__('2-matrix_divided').matrix_divided
 
 matrix = [
-    [1, 2, 3],
-    [4, 5, 6]
+    [1.0, 2.0],
+    [3.0, 4.0], 
+    [5.0, 6.0]
 ]
 print(matrix_divided(matrix, 3))
 print(matrix)
