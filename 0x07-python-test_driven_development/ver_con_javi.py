@@ -25,5 +25,5 @@ def text_indentation(text):
                 break
             if text[c + 1] == ' ':
                 print("LLEGUE ACA", end="")
-                c = c + 5
+                c = c + 1
                 print("this is the c out: {}",format(c))
