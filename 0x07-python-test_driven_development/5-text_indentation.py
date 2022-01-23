@@ -15,8 +15,7 @@ def text_indentation(text):
     text = text.strip()
     last_c = len(text) -1
     c = 0
-    for c in range(len(text)):
-        print("this is the c in: {}",format(c))
+    while c < len(text):
         print(text[c], end="")
         if text[c] == '.' or text[c] == '?' or text [c] == ':':
             print()
@@ -24,6 +23,5 @@ def text_indentation(text):
             if c == last_c:
                 break
             if text[c + 1] == ' ':
-                print("LLEGUE ACA", end="")
-                c = c + 5
-                print("this is the c out: {}",format(c))
+                c = c + 1
+        c = c + 1
