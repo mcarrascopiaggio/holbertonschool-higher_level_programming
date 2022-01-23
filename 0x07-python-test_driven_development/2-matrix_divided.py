@@ -7,6 +7,7 @@ Raise an error if the len of list in list are different
 Raise an error if div is 0
 """
 
+
 def matrix_divided(matrix, div):
     """ This function divide a matrix by a number
     and retur a new matrix with the result.
