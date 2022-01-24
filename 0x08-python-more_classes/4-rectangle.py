@@ -59,6 +59,7 @@ class Rectangle:
                 if j == (self.__width - 1):
                     string = string + "\n"
         return string
+
     def __repr__(self):
         """should return a printable representation of the object"""
         return ("Rectangle({:d},{:d})".format(self.__width, self.__height))
