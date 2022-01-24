@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-""" 
-Write an empty 
+"""
+Write an empty
 class Rectangle
 that defines a rectangle
 """
@@ -24,11 +24,11 @@ class Rectangle:
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
-    
+
     @property
     def height(self):
         return self.__width
-    
+
     @height.setter
     def height(self, value):
         if type(value) is not int:
