@@ -1,12 +1,15 @@
 #!/usr/bin/python3
-""" Write an empty class Rectangle that defines a rectangle """
+""" 
+Write an empty 
+class Rectangle
+that defines a rectangle
+"""
 
 
 class Rectangle:
     """empty class"""
     def __init__(self, width=0, height=0):
         """init with a private attribute width & height"""
-
         self.__height = height
         self.__width = width
 
