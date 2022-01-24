@@ -51,11 +51,11 @@ class Rectangle:
     def __str__(self):
         """return a sring representation"""
         string = ""
-        if self.__height == 0 or self.__width == 0:
+        if 0 in [self.__width, self.__height]:
             return string
         for i in range(self.__height):
             for j in range(self.__width):
                 string = string + '#'
-                if j == (self.__width - 1):
+                if i != self.__height - 1:
                     string = string + "\n"
         return string
