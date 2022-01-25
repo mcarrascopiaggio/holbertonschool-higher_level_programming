@@ -53,16 +53,16 @@ class Rectangle:
         return perimeter
 
     def __str__(self):
-        """return a sring representation"""
-        string = ""
-        if self.__height == 0 or self.__width == 0:
-            return string
+        '''return a rectangle'''
+        rect = ""
+        if 0 in [self.__width, self.__height]:
+            return rect
         for i in range(self.__height):
             for j in range(self.__width):
-                string = string + '#'
+                rect += "#"
             if i != self.__height - 1:
-                string = string + "\n"
-        return string
+                rect += "\n"
+        return rect
 
     def __repr__(self):
         """should return a printable representation of the object"""
