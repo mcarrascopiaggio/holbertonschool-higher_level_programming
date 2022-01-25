@@ -53,13 +53,13 @@ class Rectangle:
         return perimeter
 
     def __str__(self):
-        """return a sring representation"""
-        string = ""
+        '''return a rectangle'''
+        rect = ""
         if 0 in [self.__width, self.__height]:
-            return string
+            return rect
         for i in range(self.__height):
             for j in range(self.__width):
-                string = string + "#"
-                if i < self.__height - 1:
-                    string = string + "\n"
-        return string
+                rect += "#"
+            if i != self.__height - 1:
+                rect += "\n"
+        return rect
