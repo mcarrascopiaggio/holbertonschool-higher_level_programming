@@ -16,5 +16,5 @@ Why Python programming is awesome
 - What are the built-in immutable types
 - How does Python pass variables to functions
 
-ontact me: 
+contact me: 
 @ [Marcela Carrasco](https://www.linkedin.com/in/marcela-carrasco-piaggio-0796b333/)
