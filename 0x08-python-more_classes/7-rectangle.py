@@ -53,17 +53,17 @@ class Rectangle:
         return perimeter
 
     def __str__(self):
-            '''return a rectangle'''
-            rect = ""
-            if 0 in [self.__width, self.__height]:
-                return rect
-            for i in range(self.__height):
-                for j in range(self.__width):
-                    rect += "#"
-                if i != self.__height - 1:
-                    rect += "\n"
+        '''return a rectangle'''
+        rect = ""
+        if 0 in [self.__width, self.__height]:
             return rect
-    
+        for i in range(self.__height):
+            for j in range(self.__width):
+                rect += str(self.print_symbol)
+            if i != self.__height - 1:
+                rect += "\n"
+        return rect
+
     def __repr__(self):
         """should return a printable representation of the object"""
         return ("Rectangle({:d},{:d})".format(self.__width, self.__height))
