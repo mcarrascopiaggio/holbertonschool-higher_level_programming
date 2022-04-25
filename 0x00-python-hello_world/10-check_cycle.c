@@ -13,7 +13,7 @@ int check_cycle(listint_t *list)
 	listint_t *one = list;
 	listint_t *doble = list;
 
-	if (list != NULL)
+	if (list == NULL)
 		return (0);
 	while (doble && doble->next)
 	{
