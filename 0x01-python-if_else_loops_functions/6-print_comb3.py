@@ -4,5 +4,5 @@ for fn in range(9):
         if fn >= sc or (fn == 8 and sc == 9):
             continue
         else:
-            print(f"{fn}{sc}, ", end="")
+            print("{}{}, ".format(fn, sc), end="")
 print(89)
