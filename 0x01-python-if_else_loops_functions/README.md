@@ -1,4 +1,4 @@
-#0x01. Python - if/else, loops, functions
+# 0x01. Python - if/else, loops, functions
 - 0-positive_or_negative.py - print whether the number stored in the variable number is positive or negative.
 - 1-last_digit.py - print the last digit of the number stored in the variable number.
 - 2-print_alphabet.py - prints the ASCII alphabet, in lowercase, not followed by a new line.
@@ -13,19 +13,19 @@
 - 11-pow.py - function that computes a to the power of b and return the value.
 - 12-fizzbuzz.py - function that prints the numbers from 1 to 100 separated by a space
 - 13-insert_number.c, lists.h - 13-insert_number.c, lists.h
-#Learning Objectives
--Why indentation is so important in Python
--How to use the if, if ... else statements
--How to use comments
--How to affect values to variables
--How to use the while and for loops
--How to use the break and continues statements
--How to use else clauses on loops
--What does the pass statement do, and when to use it
--How to use range
--What is a function and how do you use functions
--What does return a function that does not use any return statement
--Scope of variables
--What’s a traceback
--What are the arithmetic operators and how to use them
+# Learning Objectives
+- Why indentation is so important in Python
+- How to use the if, if ... else statements
+- How to use comments
+- How to affect values to variables
+- How to use the while and for loops
+- How to use the break and continues statements
+- How to use else clauses on loops
+- What does the pass statement do, and when to use it
+- How to use range
+- What is a function and how do you use functions
+- What does return a function that does not use any return statement
+- Scope of variables
+- What’s a traceback
+- What are the arithmetic operators and how to use them
 
