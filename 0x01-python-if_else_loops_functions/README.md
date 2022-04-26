@@ -31,4 +31,11 @@
 - Scope of variables
 - What’s a traceback
 - What are the arithmetic operators and how to use them
-
+## Strategy task 13
+- First check if de list exist: check header.
+- Give memory for the new node
+- Assing value to the n from de new node
+- Take into account the different situation:
+1. Node could be the only node of the list
+2. The node could have smaller n value compared to the first and need to be put at the end.
+3. The node could be in the middle so is need to change the previous node "next addresses" and insert there.
