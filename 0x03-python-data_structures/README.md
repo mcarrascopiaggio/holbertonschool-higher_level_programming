@@ -31,3 +31,8 @@
 # Advances Project
 - 100-print_python_list_info.c
 
+
+# Algo for 13
+- Make a function that reverse a linked list
+- Comprare linked list with reversed linked list
+
