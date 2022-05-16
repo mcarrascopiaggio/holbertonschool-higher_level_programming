@@ -28,3 +28,4 @@
 ## Resources
 - https://docs.python.org/3/tutorial/errors.html
 - https://docs.hektorprofe.net/python/errores-y-excepciones/
+- https://pythontect.com/how-to-print-to-stderr-in-python/
