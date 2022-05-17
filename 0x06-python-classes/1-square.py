@@ -4,6 +4,7 @@
 
 class Square:
     """empty class Square with a private attribute"""
+    
     def __init__(self, size):
         """function init Square class with a private attribute size"""
-    self.__size = size
+        self.__size = size
