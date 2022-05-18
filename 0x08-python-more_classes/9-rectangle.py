@@ -3,11 +3,11 @@
 
 
 class Rectangle:
+    """Define class Rectangle"""
 
     number_of_instances = 0
     print_symbol = "#"
 
-    """Define class Rectangle"""
     def __init__(self, width=0, height=0):
         """Instantiation with optional width and height"""
         self.__height = height
