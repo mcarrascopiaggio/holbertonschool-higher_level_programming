@@ -49,8 +49,8 @@ class Square:
 
     def __eq__(self, other):
         """describes equality operator(==)"""
-        return ((self.area()) == (self.other()))
+        return ((self.area()) == (other.area()))
 
     def __ne__(self, other):
         """describes not equal to operator(!=)"""
-        return ((self.area()) != (self.other()))
+        return ((self.area()) != (other.area()))
