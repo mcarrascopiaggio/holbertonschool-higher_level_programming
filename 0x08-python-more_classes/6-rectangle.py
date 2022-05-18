@@ -3,10 +3,10 @@
 
 
 class Rectangle:
+    """Define class Rectangle"""
 
     number_of_instances = 0
 
-    """Define class Rectangle"""
     def __init__(self, width=0, height=0):
         """Instantiation with optional width and height"""
         self.__height = height
@@ -67,6 +67,6 @@ class Rectangle:
         return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
-        """ print a message"""
+        """Printing menssage when deleting"""
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
