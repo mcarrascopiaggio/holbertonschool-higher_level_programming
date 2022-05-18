@@ -32,3 +32,13 @@
 - 4-square.py - Write a class Square that defines a square by: (based on 3-square.py)
 - 5-square.py - Write a class Square that defines a square by: (based on 4-square.py)
 - 6-square.py - Write a class Square that defines a square by: (based on 5-square.py)
+
+## Resources
+- [Getters & Setters](https://python-course.eu/oop/properties-vs-getters-and-setters.php)
+- [Objec Oriented Programming] (https://www.youtube.com/watch?v=-DP1i2ZU9gk)
+- [Docstring] (https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html)
+
+
+
+
+@ [Marcela Carrasco](https://www.linkedin.com/in/marcela-carrasco-piaggio-0796b333/)
