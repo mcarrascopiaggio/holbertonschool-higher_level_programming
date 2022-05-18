@@ -33,24 +33,24 @@ class Square:
 
     def __lt__(self, other):
         """describes less than operator(<)"""
-        return ((self.area) < (other.area))
+        return ((self.area()) < (other.area()))
 
     def __le__(self, other):
         """descries less than or equal to (<=)"""
-        return ((self.area) <= (other.area))
+        return ((self.area()) <= (other.area()))
 
     def __gt__(self, other):
         """describes greater than (>)"""
-        return ((self.area) > (other.area))
+        return ((self.area()) > (other.area()))
 
     def __ge__(self, other):
         """describes greater than or equal to (>=)"""
-        return ((self.area) >= (other.area))
+        return ((self.area()) >= (other.area()))
 
     def __eq__(self, other):
         """describes equality operator(==)"""
-        return ((self.area) == (self.other))
+        return ((self.area()) == (self.other()))
 
     def __ne__(self, other):
         """describes not equal to operator(!=)"""
-        return ((self.area) != (self.other))
+        return ((self.area()) != (self.other()))
