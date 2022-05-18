@@ -1,5 +1,5 @@
-@ [Marcela Carrasco](https://www.linkedin.com/in/marcela-carrasco-piaggio-0796b333/)
-This repo is about higher level programming
+[Marcela Carrasco](https://www.linkedin.com/in/marcela-carrasco-piaggio-0796b333/)
+## This repo is about higher level programming
 - 0x00. Python - Hello, World
 - 0x01. Python - if/else, loops, functions
 - 0x02. Python - import & modules
