@@ -35,8 +35,8 @@
 
 ## Resources
 - [Getters & Setters](https://python-course.eu/oop/properties-vs-getters-and-setters.php)
-- [Objec Oriented Programming] (https://www.youtube.com/watch?v=-DP1i2ZU9gk)
-- [Docstring] (https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html)
+- [Objec Oriented Programming](https://www.youtube.com/watch?v=-DP1i2ZU9gk)
+- [Docstring](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html)
 
 
 
