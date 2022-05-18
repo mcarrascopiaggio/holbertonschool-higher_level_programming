@@ -1,4 +1,5 @@
-In this directory you can find the exercises carried out in the second quarter of Holbertons School. The main language used is Python.
+@ [Marcela Carrasco](https://www.linkedin.com/in/marcela-carrasco-piaggio-0796b333/)
+This repo is about higher level programming
 - 0x00. Python - Hello, World
 - 0x01. Python - if/else, loops, functions
 - 0x02. Python - import & modules
