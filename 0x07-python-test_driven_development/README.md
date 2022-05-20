@@ -17,5 +17,8 @@
 - 6-max_integer_test.py - write unittests for function def max_integer(list=[]):
 
 ## Usefull Resources
+[Docstring](https://docs.python.org/3.9/library/doctest.html)
+[unitest](https://www.youtube.com/watch?v=1Lfv5tUGsn8)
+
 
 @ [Marcela Carrasco](https://www.linkedin.com/in/marcela-carrasco-piaggio-0796b333/)
