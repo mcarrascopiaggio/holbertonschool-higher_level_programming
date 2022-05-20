@@ -1,0 +1,105 @@
+=================================================================
+3-say_my_name.py
+=================================================================
+
+Code implementation to import:
+
+	>>> say_my_name = __import__("3-say_my_name").say_my_name
+
+=================================================================
+Succes Cases: Two strings
+=================================================================
+	>>> say_my_name("Marcela", "Carrasco")
+	My name is Marcela Carrasco
+
+	>>> say_my_name("M", "C")
+	My name is M C
+
+	>>> say_my_name("Maria Marcela", "Carrasco")
+	My name is Maria Marcela Carrasco
+
+	>>> say_my_name(" ", "Carrasco")
+	My name is   Carrasco
+
+	>>> say_my_name("", "Carrasco")
+	My name is  Carrasco
+
+	>>> say_my_name("Marcela", " ")
+	My name is Marcela  
+
+	>>> say_my_name("Maria Marcela", "")
+	My name is Maria Marcela 
+
+=================================================================
+Succes Cases: Default value of Last Name
+=================================================================
+	>>> say_my_name("Maria Marcela")
+	My name is Maria Marcela 
+
+	>>> say_my_name("M")
+	My name is M 
+
+=================================================================
+Non Succes Cases: TypeError (first_name)
+=================================================================
+	>>> say_my_name(1, "Carrasco")
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+	>>> say_my_name(1.5, "Carrasco")
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+	>>> say_my_name(["a", "b"], "Carrasco")
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+	>>> say_my_name(("Marcela",), "Carrasco")
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+	>>> say_my_name(True, "Carrasco")
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+	>>> say_my_name(None, "Rivero")
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+=================================================================
+Non Succes Cases: TypeError (last_name)
+=================================================================
+	>>> say_my_name("Marcela", 1)
+	Traceback (most recent call last):
+	TypeError: last_name must be a string
+
+	>>> say_my_name("Marcela", 1.5)
+	Traceback (most recent call last):
+	TypeError: last_name must be a string
+
+	>>> say_my_name("Marcela", ["a","b"])
+	Traceback (most recent call last):
+	TypeError: last_name must be a string
+
+	>>> say_my_name("Marcela", ("Carrasco",))
+	Traceback (most recent call last):
+	TypeError: last_name must be a string
+
+	>>> say_my_name("Marcela", True)
+	Traceback (most recent call last):
+	TypeError: last_name must be a string
+	
+	>>> say_my_name("Marcela", None)
+	Traceback (most recent call last):
+	TypeError: last_name must be a string
+
+=================================================================
+Non Succes Cases: TypeError (first_name & last_name)
+=================================================================
+	>>> say_my_name(2, 1)
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+	>>> say_my_name(None, None)
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
