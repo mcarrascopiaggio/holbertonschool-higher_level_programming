@@ -1,0 +1,45 @@
+===================================================================
+Text indentation
+===================================================================
+Code implementation to import:
+
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+===================================================================
+Succes Cases
+===================================================================
+
+	>>> text_indentation("Marcela Carrasco")
+	Marcela Carrasco
+
+	>>> text_indentation("??:).Marce:)")
+	?
+	<BLANKLINE>
+	?
+	<BLANKLINE>
+	:
+	<BLANKLINE>
+	).
+	<BLANKLINE>
+	Marce:
+	<BLANKLINE>
+	)
+	
+==================================================================
+Non Succes Cases: Different Type
+==================================================================
+	>>> text_indentation(12)
+	Traceback (most recent call last):
+	TypeError: text must be a string
+
+	>>> text_indentation([1,2,3])
+	Traceback (most recent call last):
+	TypeError: text must be a string
+	
+	>>> text_indentation(("Hola",))
+	Traceback (most recent call last):
+	TypeError: text must be a string
+	
+	>>> text_indentation(25.5)
+	Traceback (most recent call last):
+	TypeError: text must be a string

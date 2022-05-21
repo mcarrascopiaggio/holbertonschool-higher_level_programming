@@ -4,6 +4,8 @@ function that prints a square with the character #
 size is the size length of the square
 size must be an integer, otherwise raise a TypeError exception
 """
+
+
 def print_square(size):
     """
     function prints a square
