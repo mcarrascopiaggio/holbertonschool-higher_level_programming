@@ -9,8 +9,6 @@ or raise a TypeError exception
 def say_my_name(first_name, last_name=""):
     """
     First line
-    Second Line
-    Third Line
     """
     if not isinstance(first_name, str):
         raise TypeError("first_name must be a string")
