@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-"""Lazy matrix multiplication using numpy library"""
+"""
+Lazy 
+matrix multiplication 
+using numpy library
+"""
 import numpy as np
 
 
