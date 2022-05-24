@@ -16,5 +16,6 @@
 
 ## Resources
 - [join](https://www.geeksforgeeks.org/python-string-join-method/)
-
+- [Control Attributes](https://towardsdatascience.com/5-ways-to-control-attributes-in-python-an-example-led-guide-2f5c9b8b1fb0)
+- [Control Attributes II] (https://www.geeksforgeeks.org/python-use-of-__slots__/#:~:text=slots%20provide%20a%20special%20mechanism,of%20memory%20optimisation%20on%20objects.&text=As%20every%20object%20in%20Python,dictionary%20that%20allows%20adding%20attributes.)
 @ [Marcela Carrasco](https://www.linkedin.com/in/marcela-carrasco-piaggio-0796b333/)
