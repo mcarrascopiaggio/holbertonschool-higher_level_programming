@@ -14,4 +14,7 @@
 - What are the built-in immutable types
 - How does Python pass variables to functions
 
+## Resources
+- [join](https://www.geeksforgeeks.org/python-string-join-method/)
+
 @ [Marcela Carrasco](https://www.linkedin.com/in/marcela-carrasco-piaggio-0796b333/)
