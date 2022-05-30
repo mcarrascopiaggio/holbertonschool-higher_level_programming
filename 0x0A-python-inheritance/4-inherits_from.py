@@ -10,7 +10,7 @@ def inherits_from(obj, a_class):
     """
     returns True if the object is an instance of a class that inherited
     """
-    if issubclass(type(obj), a_class) and type(obj) != a_class:
-        return True
-    else:
-        return False
+    if isinstance(obj, a_class):
+        if issubclass(a_class, obj.__class__) is not True:
+            return True
+    return False
