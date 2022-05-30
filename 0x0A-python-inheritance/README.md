@@ -30,9 +30,9 @@
 - 11-square.py - Write a class Square that inherits from Rectangle (9-rectangle.py). (task based on 10-square.py).
 
 ## Resources
-[Super()](https://www.geeksforgeeks.org/python-super/)
-[Hassattr](https://www.geeksforgeeks.org/python-hasattr-method/)
-[setattr](https://www.geeksforgeeks.org/python-setattr-method/)
+- [Super()](https://www.geeksforgeeks.org/python-super/)
+- [Hassattr](https://www.geeksforgeeks.org/python-hasattr-method/)
+- [setattr](https://www.geeksforgeeks.org/python-setattr-method/)
 
 ### Contact me
 [Marcela Carrasco](https://www.linkedin.com/notifications/)
