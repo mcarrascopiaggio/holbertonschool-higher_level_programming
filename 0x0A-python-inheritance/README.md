@@ -31,6 +31,8 @@
 
 ## Resources
 [Super()](https://www.geeksforgeeks.org/python-super/)
+[Hassattr](https://www.geeksforgeeks.org/python-hasattr-method/)
+[setattr](https://www.geeksforgeeks.org/python-setattr-method/)
 
 ### Contact me
 [Marcela Carrasco](https://www.linkedin.com/notifications/)
