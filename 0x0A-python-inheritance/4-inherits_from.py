@@ -1,14 +1,15 @@
 #!/usr/bin/python3
 """
-Write a function that returns True
-if the object is an instance of a class that inherited
-from the specified class ; otherwise False
+A function that returns True if the object is an instance
 """
 
 
 def inherits_from(obj, a_class):
     """
-    returns True if the object is an instance of a class that inherited
+    inherits_from: Check if is inherited for specificed class
+    Args:
+    obj: object
+    a_class: class
     """
     if isinstance(obj, a_class):
         if issubclass(a_class, obj.__class__) is not True:
