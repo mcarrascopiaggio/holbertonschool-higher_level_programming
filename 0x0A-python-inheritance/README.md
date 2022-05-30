@@ -35,4 +35,4 @@
 - [setattr](https://www.geeksforgeeks.org/python-setattr-method/)
 
 ### Contact me
-[Marcela Carrasco](https://www.linkedin.com/notifications/)
+[Marcela Carrasco](https://www.linkedin.com/in/marcela-carrasco-piaggio-0796b333/)
