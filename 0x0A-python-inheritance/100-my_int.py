@@ -12,7 +12,13 @@ class MyInt(int):
     """
 
     def __eq__(self, other):
+        """
+        change return to
+        False"""
         return False
 
     def __ne__(self, other):
+        """
+        change return to True
+        """
         return True
