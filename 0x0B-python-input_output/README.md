@@ -16,7 +16,7 @@ What is deserialization
 How to convert a Python data structure to a JSON string
 How to convert a JSON string to a Python data structure
 
-##Mandatory Task
+## Mandatory Task
 - 0-read_file.py - function that reads a text file (UTF8) and prints it to stdout
 - 1-write_file.py - function that writes a string to a text file (UTF8)
 - 2-append_write.py - function that appends a string at the end of a text file (UTF8)
@@ -31,4 +31,8 @@ How to convert a JSON string to a Python data structure
 - 11-student.py - Write a class Student that defines a student by: (based on 10-student.py)
 - 12-pascal_triangle.py - function def pascal_triangle(n): that returns a list of lists of integers representing the Pascal’s triangle of n
 
+## Resources
+- [Reading & writing](https://docs.python.org/es/3/tutorial/inputoutput.html#reading-and-writing-files)
+
+### Contact me
 [Marcela Carrasco](https://www.linkedin.com/in/marcela-carrasco-piaggio-0796b333/)
