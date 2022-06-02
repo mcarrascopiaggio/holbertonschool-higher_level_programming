@@ -33,7 +33,7 @@
 - 19. File to instances - Update the class Base by adding the class method def load_from_file(cls): that returns a list of instances
 
 ## Resources
-[args & kwargs](https://www.youtube.com/watch?v=jj_NKNDC7Aw)
-[serialization](https://www.youtube.com/watch?v=qKexf6uF9wk&t=25s)
-[Unittest](https://docs.hektorprofe.net/python/documentacion-y-pruebas/unittest/)
+- [args & kwargs](https://www.youtube.com/watch?v=jj_NKNDC7Aw)
+- [serialization](https://www.youtube.com/watch?v=qKexf6uF9wk&t=25s)
+- [Unittest](https://docs.hektorprofe.net/python/documentacion-y-pruebas/unittest/)
 
