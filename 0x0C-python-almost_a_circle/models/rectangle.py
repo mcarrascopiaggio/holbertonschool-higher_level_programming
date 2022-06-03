@@ -6,7 +6,7 @@ Write the class Rectangle that inherits from Base
 
 
 from models.base import Base
-"""importing class base"""
+import sys
 
 
 class Rectangle(Base):
@@ -113,3 +113,18 @@ class Rectangle(Base):
             for colum in range(self.__width):
                 print("#", end="")
             print()
+
+    def update(self, *args, **kwargs):
+        """
+        assigns a key/value argument to attributes
+        """
+        list_args = ['id', 'width', 'height', 'x', 'y']
+        if args:
+            if len(args) < 6:
+                for i in range(len(args)):
+                    setattr(self, list_args[i], args[i])
+        else:
+            if kwargs:
+                for key in kwargs:
+                    if key in list_args:
+                        setattr(self, key, kwargs[key])
