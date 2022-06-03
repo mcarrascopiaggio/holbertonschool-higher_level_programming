@@ -5,6 +5,7 @@ Write the first class Base
 
 
 import json
+import os
 
 
 class Base():
@@ -48,3 +49,27 @@ class Base():
                 for items in list_objs:
                     my_List.append(items.to_dictionary())
                 return myFile.write(cls.to_json_string(my_List))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """
+        returns the list of the JSON string representation json_string
+        """
+        my_List = []
+        if json_string is None:
+            return my_List
+        else:
+            return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """
+        returns an instance with all attributes already set:
+        arg **dictionary can be thought of as a double pointer to a dictionary
+        """
+        if cls.__name__ == 'Rectangle':
+            dummy = cls(1, 1)
+        elif cls.__name__ == 'Square':
+            dummy = cls(1)
+        dummy.update(**dictionary)
+        return dummy
