@@ -20,7 +20,7 @@ class Square(Rectangle):
         """
         returns the string format for print
         """
-        return f"[Square] ({self.id}) {self.x}/{self.y} - {super().width}"
+        return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
 
     @property
     def size(self):
@@ -36,3 +36,17 @@ class Square(Rectangle):
         """
         self.width = size
         self.height = size
+
+    def update(self, *args, **kwargs):
+        """
+        assigns attributes
+        """
+
+        list_attr = ["id", "size", "x", "y"]
+        if args:
+            if len(args) > 0:
+                for i in range(len(args)):
+                    setattr(self, list_attr[i], args[i])
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
