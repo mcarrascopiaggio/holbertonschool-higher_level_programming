@@ -93,18 +93,23 @@ class Rectangle(Base):
         """
         return self.__width * self.__height
 
-    def display(self):
-        """
-        prints in stdout the Rectangle instance with the character #
-        """
-        for row in range(self.__height):
-            for colum in range(self.__width):
-                print("#", end="")
-            print()
-
     def __str__(self):
         """
         returns [Rectangle] (<id>) <x>/<y> - <width>/<height>
         """
         return f"[Rectangle] ({self.id}) \
 {self.__x}/{self.__y} - {self.__width}/{self.__height}"""
+
+    def display(self):
+        """
+        to print in stdout the Rectangle instance with
+        the character # by taking care of x and y
+        """
+        for lines in range(self.__y):
+            print()
+        for row in range(self.__height):
+            for spaces in range(self.__x):
+                print(" ", end="")
+            for colum in range(self.__width):
+                print("#", end="")
+            print()
