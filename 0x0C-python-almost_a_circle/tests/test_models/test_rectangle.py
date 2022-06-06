@@ -57,7 +57,9 @@ class Test_Rectangle(unittest.TestCase):
         self.assertRaises(TypeError, Rectangle, 1, 2, 3, 4, 5)
 
     def test_width(self):
-        """ width test """
+        """
+        width test
+        """
         self.assertRaises(ValueError, Rectangle, 0, 10)
         self.assertRaises(ValueError, Rectangle, -1, 10)
         self.assertRaises(TypeError, Rectangle, (1, 2), 10)
@@ -71,6 +73,25 @@ class Test_Rectangle(unittest.TestCase):
         self.assertRaises(TypeError, Rectangle, 1, 2, 3)
         self.assertRaises(TypeError, Rectangle, 1, 2, 3, 4)
         self.assertRaises(TypeError, Rectangle, 1, 2, 3, 4, 5)
+
+    def test_str(self):
+        """
+        check string representation
+        """
+        r1 = Rectangle(4, 6, 2, 1, 12)
+        self.assertEqual(s1.__str__(), "[Rectangle] (12) 2/1 - 4/6")
+
+    def test_area(self):
+        """
+        check area function
+        """
+        r1 = Rectangle(3, 2)
+        self.assertEqual(re.area(), 6)
+
+    def test_update(self):
+        r1 = Rectangle(10, 10, 10, 10)
+        r1.update(89)
+        self.assertEqual(r1.__str__(), '[Rectangle] (89) 10/10 - 10/10')
 
     if __name__ == "__main__":
         unittest.main()

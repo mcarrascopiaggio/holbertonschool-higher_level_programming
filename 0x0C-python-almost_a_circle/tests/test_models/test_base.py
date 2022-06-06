@@ -15,6 +15,7 @@ class Test_Base(unittest.TestCase):
     """
 
     def test_default_id(self):
+        Base._Base__nb_objects = 0
         b1 = Base()
         self.assertEqual(b1.id, 1)
         b2 = Base()
