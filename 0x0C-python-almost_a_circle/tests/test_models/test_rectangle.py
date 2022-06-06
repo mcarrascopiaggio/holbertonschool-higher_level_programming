@@ -9,3 +9,12 @@ from models.square import Square
 
 
 class Test_Rectangle(unittest.TestCase):
+   """
+   Rectangle test
+   """
+
+   def test_class(self):
+        self.assertRaises(TypeError, Rectangle, ())
+
+    if __name__ == "__main__":
+        unittest.main()
