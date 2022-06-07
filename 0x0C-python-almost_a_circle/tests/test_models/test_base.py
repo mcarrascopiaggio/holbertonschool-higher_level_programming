@@ -9,7 +9,7 @@ from models.square import Square
 import os
 
 
-class Test_Base(unittest.TestCase):
+class test_Base(unittest.TestCase):
     """
     Base test
     """
