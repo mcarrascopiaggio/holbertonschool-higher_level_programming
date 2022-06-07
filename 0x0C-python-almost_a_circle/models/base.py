@@ -47,7 +47,7 @@ class Base():
                 return myFile.write("")
             else:
                 for items in list_objs:
-                    my_List.append(items.to_dictionary())
+                    my_List.append(cls.to_dictionary(item))
                 return myFile.write(cls.to_json_string(my_List))
 
     @staticmethod
