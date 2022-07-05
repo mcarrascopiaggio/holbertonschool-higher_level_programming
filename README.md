@@ -1,3 +1,12 @@
+![GitHub last commit](https://img.shields.io/github/last-commit/mcarrascopiaggio/holbertonschool-higher_level_programming)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/agusfl/mcarrascopiaggio/holbertonschool-higher_level_programming)
+![Lines of code](https://img.shields.io/tokei/lines/github/agusfl/mcarrascopiaggio/holbertonschool-higher_level_programming)
+
+## Environment
+<div>
+<a  href="https://www.cprogramming.com/"  target="_blank"><img  height="24px"  src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/python-logo-inkscape.svg"  alt="C programming language"  ></a> <a  href="https://ubuntu.com/"  target="_blank"><img  height="24px"  src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/ubuntu-icon.svg"  alt="C programming language"></a> <a  href="https://www.vim.org/"  target="_blank"><img  height="24px"  src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/Vimlogo.svg"  alt="C programming language"></a>
+</div>
+
 [Marcela Carrasco](https://www.linkedin.com/in/marcela-carrasco-piaggio-0796b333/)
 ## This repo is about higher level programming
 - 0x00. Python - Hello, World
