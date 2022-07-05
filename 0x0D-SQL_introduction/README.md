@@ -31,5 +31,7 @@
 - 15-groups.sql - lists the number of records with the same score in the table second_table of the database hbtn_0c_0 in your MySQL server.
 - 16-no_link.sql - lists all records of the table second_table of the database hbtn_0c_0 in your MySQL server.
 
+## Resources
+[Create without error if already exists] (https://stackoverflow.com/questions/59641684/create-database-if-db-not-exist)
 ### Contact me
 [Marcela Carrasco](https://www.linkedin.com/in/marcela-carrasco-piaggio-0796b333/)
