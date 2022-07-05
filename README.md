@@ -1,6 +1,6 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/mcarrascopiaggio/holbertonschool-higher_level_programming)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/agusfl/mcarrascopiaggio/holbertonschool-higher_level_programming)
-![Lines of code](https://img.shields.io/tokei/lines/github/agusfl/mcarrascopiaggio/holbertonschool-higher_level_programming)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mcarrascopiaggio/holbertonschool-higher_level_programming)
+![Lines of code](https://img.shields.io/tokei/lines/github/mcarrascopiaggio/holbertonschool-higher_level_programming)
 
 ## Environment
 <div>
