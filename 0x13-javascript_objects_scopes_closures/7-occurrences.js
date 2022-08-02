@@ -7,5 +7,5 @@ for(i = 0; i < list.length; i++){
   num = num + 1;
   }
 }	
-retunr num;
+return num;
 }
