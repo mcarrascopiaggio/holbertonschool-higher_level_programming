@@ -22,11 +22,10 @@ query = """SELECT cities.name
         JOIN states ON cities.state_id = states.id
         WHERE states.name=%s
         ORDER BY cities.id ASC"""
-cur.execute(query,(state,))
+cur.execute(query, (state,))
 # Después de ejecutar cualquier declaración SELECT se necesita mostrar los res
 rows = cur.fetchall()
-for row in rows:
-    print(row)
+print(", ".join(i[0] for i in rows))
 # Close all cursors
 cur.close()
 # Close all databases
