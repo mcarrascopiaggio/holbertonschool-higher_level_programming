@@ -21,6 +21,6 @@ if __name__ == "__main__":
     for state in session.query(State).order_by(State.id).all():
         print(f"{state.id}: {state.name}")
         flag = True
-        if (flag == True):
+        if (flag):
             break
     session.close()
