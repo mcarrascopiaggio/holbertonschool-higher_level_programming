@@ -12,16 +12,16 @@ if __name__ == "__main__":
         user=argv[1],
         passwd=argv[2],
         db=argv[3])
-# crear un objeto de cursor.
-cur = db.cursor()
-# objeto de cursor y llamar a la función 'ejecutar'.
-# La función de ejecución requiere un parámetro, la consulta.
-cur.execute("SELECT * FROM states where name LIKE 'N%' ORDER BY id ASC")
-# Después de ejecutar cualquier declaración SELECT se necesita mostrar los res
-rows = cur.fetchall()
-for row in rows:
-    print(row)
-# Close all cursors
-cur.close()
-# Close all databases
-db.close()
+    # crear un objeto de cursor.
+    cur = db.cursor()
+    # objeto de cursor y llamar a la función 'ejecutar'.
+    # La función de ejecución requiere un parámetro, la consulta.
+    cur.execute("SELECT * FROM states where name LIKE 'N%' ORDER BY id ASC")
+    # Después de ejecutar cualquier declaración SELECT se necesita mostrar los
+    rows = cur.fetchall()
+    for row in rows:
+        print(row)
+    # Close all cursors
+    cur.close()
+    # Close all databases
+    db.close()
