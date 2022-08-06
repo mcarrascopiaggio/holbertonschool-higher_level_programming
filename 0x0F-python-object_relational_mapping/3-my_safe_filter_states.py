@@ -19,7 +19,7 @@ if __name__ == "__main__":
     # La función de ejecución requiere un parámetro, la consulta.
     query = "SELECT * FROM states WHERE name = %s ORDER BY id ASC"
     cur.execute(query, (state,))
-    # Después de ejecutar cualquier declaración SELECT se necesita mostrar los res
+    # Después de ejecutar cualquier declaración SELECT se necesita mostrar los
     rows = cur.fetchall()
     for row in rows:
         print(row)

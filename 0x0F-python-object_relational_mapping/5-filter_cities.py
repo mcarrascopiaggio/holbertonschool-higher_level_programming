@@ -23,7 +23,7 @@ if __name__ == "__main__":
             WHERE states.name=%s
             ORDER BY cities.id ASC"""
     cur.execute(query, (state,))
-    # Después de ejecutar cualquier declaración SELECT se necesita mostrar los res
+    # Después de ejecutar cualquier declaración SELECT se necesita mostrar los
     rows = cur.fetchall()
     print(", ".join(i[0] for i in rows))
     # Close all cursors
