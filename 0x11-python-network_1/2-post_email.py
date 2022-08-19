@@ -12,7 +12,7 @@ found in the header of the response.
 
 
 import urllib.request
-from sys impor argv
+from sys import argv
 
 if __name__=="__main__":
     with urllib.request.urlopen(argv[1]) as response:
