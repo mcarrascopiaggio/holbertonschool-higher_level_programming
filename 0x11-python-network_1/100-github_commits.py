@@ -18,6 +18,6 @@ if __name__ == '__main__':
     i = 0
     for d in data:
         if i < 10:
-            print("{}: {}".format(x.get("sha"),
-                  x.get('commit').get('author').get('name')))
+            print("{}: {}".format(d.get("sha"),
+                  d.get('commit').get('author').get('name')))
             i = i + 1
