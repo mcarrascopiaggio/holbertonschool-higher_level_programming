@@ -13,13 +13,13 @@ HTTPError exceptions and print: Error code: followed by the HTTP status code
 
 import urllib.request
 from sys import argv
-import urllib.parse
 
 
 if __name__ == "__main__":
     url = argv[1]
     req = urllib.request.Request(url)
     try:
-        urllib.request.urlopen(req)
-    except urllib.error.URLError as e:
-        print(e.reason)
+        with urllib.request.urlopen(url as response:
+            print(response.read().decode('utf-8'))
+    except urllib.error.HTTPError as e:
+    print(f"Error code: {e.code}")
