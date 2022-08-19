@@ -8,7 +8,9 @@ the following example (tabulation before -)
 """
 
 
-import request
+import requests
+
+
 if __name__ == "__main__":
     ans = requests.get('https://intranet.hbtn.io/status')
     print("Body response:")
